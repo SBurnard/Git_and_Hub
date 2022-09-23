@@ -107,12 +107,11 @@ This outlines the steps to initialise and connect a local repo on GitHub. This a
 
 3. Open git bash and cd to project directory (if it's on canepi ssh across).
 4. Time to initialise your git repo! This starts git tracking changes to your local directory (nothing to do with github yet....) The most appropriate option below depends on if you've installed the latest version of git or using the HPC git (which is an old version)  
-	Newest version:
+	*Newest git version*:
 	```
 	git init 
 	```
-HPC:
-
+	*HPC module loaded git*:
 	```
 	module load git
 	git init && git symbolic-ref HEAD refs/heads/main
