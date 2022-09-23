@@ -31,9 +31,9 @@ See these webpages for more details on [adding a new SSH key to your GitHub page
 	```
 	ssh-keygen -t ed25519 -C "your_email@example.com"
 	```
-	# I used my no reply GitHub email, which is typically <user.name>@users.noreply.github.com
-	# This can also be seen from github.com account (Settings/Emails - then under Primary email address it should show to no reply option).
-	This create your new SSH key!
+	I used my no reply GitHub email, which is typically <user.name>@users.noreply.github.com  
+	This can also be seen from github.com account (Settings/Emails - then under Primary email address it should show to no reply option).
+
 3. When you're prompted to "Enter a file in which to save the key," press Enter. This accepts the default file location.
 	```
 	> Enter a file in which to save the key (/c/Users/you/.ssh/id_algorithm):[Press enter]
@@ -94,7 +94,7 @@ This outlines the steps to initialise and connect a local repo on GitHub. This a
    - For now, don't click 'add licence' we will create this after the first push! But, it is important to add one later (and consider which type is most relevant). I will create a separate comment later about this, but most likely 'MIT' is most applicable. In short, this makes it more likely and attractive for people to use and interactive with you work! Without it, technically, no one is really allowed to use your code... Which really defeats the point of GitHub and your hardwork... Although, this isn't important if you're not going to make your repo public. ^^
    - Create repository.
 
-2. Add .gitignore to your project folder on your computer/project folder (important if you have a lot of big or intermediate files you don't want tracked and uploaded).
+2. Add .gitignore to your project folder on your computer/project folder (important if you have a lot of big or intermediate files you don't want tracked and uploaded). Open notepad++ or atom and save as '.gitignore' with the files on separate lines as described below.
 
 	Essentially, this is a text-like file with one line per rule of file to ignore relative to the top level of the repo i.e.
 	```
@@ -103,7 +103,7 @@ This outlines the steps to initialise and connect a local repo on GitHub. This a
 	results/intermediate_files/*
 	annotation_file.gtf
 	```
-	Open notepad++ or atom and save as '.gitignore' with the files on separate lines as described above.
+	
 
 3. Open git bash and cd to project directory (if it's on canepi ssh across).
 4. Time to initialise your git repo! This starts git tracking changes to your local directory (nothing to do with github yet....) The most appropriate option below depends on if you've installed the latest version of git or using the HPC git (which is an old version)  
@@ -112,6 +112,7 @@ This outlines the steps to initialise and connect a local repo on GitHub. This a
 	git init 
 	```
 HPC:
+
 	```
 	module load git
 	git init && git symbolic-ref HEAD refs/heads/main
